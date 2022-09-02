@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.btn{
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    width: 200px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    transition: .5s ease;
+
+}
+.btn:hover{
+    background-color: wheat;
+    color: blueviolet;
+    transition: .5s ease;
+}
+.blackBox{
+    width: 35%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #000;
+    color: white;
+
+    opacity: 0;
+    display: none;
+    transition: .5s ease;
+    
+
+}
+.menu{
+    position: absolute;
+    top: 30%;
+    left: 40px;
+}
+.menu li {
+    cursor: pointer;
+}
+h3{
+    margin: 20px;
+    margin-left: 10px;
+}
+h4{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    cursor: pointer;
+}
+.modal{
+    width: 600px;
+    height: 500px;background-color: white;
+    border-radius: 14px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(.2);
+    opacity: 0;
+    display: none;
+    transition: .5s ease;
+}
+.modal_bg{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    display: none;
+    transition: .5s ease;
+
+
+}
+.input_modal{
+    width: 80%;
+    height: 40px;
+    border-radius: 10px;
+    background-color: wheat;
+    color: black;
+    margin-top: 20px;
+    padding-left: 20px;
+    border: 1px solid blueviolet;
+}
+.button_click{
+    width: 80%;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: blue;
+    color: white;
+    margin-top: 30px;
+}
+.modal form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20%;
+
+}
+.modal h5{
+    position: absolute;
+    top: 30px;
+    right: 10%;
+    cursor: pointer;
+}
